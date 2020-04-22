@@ -526,14 +526,14 @@ export default {
       let dbname = this.$route.query.basename;
       if (dbname === 'escloud-db') {
         this.formItem.computer_room = 'Aliyun';
-        this.ScreenConnection('Aliyun');
+        this.acquireCon('Aliyun');
         this.formItem.connection_name = '大陆阿里云正式';
         this.DataBaseName('大陆阿里云正式');
         this.formItem.basename = 'escloud-db';
       }
       if (dbname === 'escloud-tw') {
         this.formItem.computer_room = 'azure';
-        this.ScreenConnection('azure');
+        this.acquireCon('azure');
         this.formItem.connection_name = '台湾正式';
         this.DataBaseName('台湾正式');
         this.formItem.basename = 'escloud-tw';
