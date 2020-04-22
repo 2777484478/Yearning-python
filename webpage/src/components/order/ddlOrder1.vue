@@ -528,14 +528,14 @@ export default {
         this.formItem.computer_room = 'Aliyun';
         this.acquireCon('Aliyun');
         this.formItem.connection_name = '大陆阿里云正式';
-        this.DataBaseName('大陆阿里云正式');
+        this.acquireBase('大陆阿里云正式');
         this.formItem.basename = 'escloud-db';
       }
       if (dbname === 'escloud-tw') {
         this.formItem.computer_room = 'azure';
         this.acquireCon('azure');
         this.formItem.connection_name = '台湾正式';
-        this.DataBaseName('台湾正式');
+        this.acquireBase('台湾正式');
         this.formItem.basename = 'escloud-tw';
       }
     }, 1000)
